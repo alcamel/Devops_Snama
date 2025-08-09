@@ -1,0 +1,41 @@
+---
+- name: Remove LAMP Stack
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Stop services
+      service:
+        name: "{{ item }}"
+        state: stopped
+      loop:
+        - apache2
+        - httpd
+        - mysql
+        - mariadb
+      ignore_errors: yes
+
+    - name: Purge LAMP packages
+      package:
+        name: "{{ item }}"
+        state: absent
+        autoremove: yes
+        purge: yes
+      loop:
+        - apache2
+        - httpd
+        - mysql-server
+        - mariadb-server
+        - php*
+        - libapache2-mod-php
+
+    - name: Remove config directories
+      file:
+        path: "{{ item }}"
+        state: absent
+      loop:
+        - /etc/apache2
+        - /etc/mysql
+        - /etc/php
+        - /var/www/html
+      ignore_errors: yes

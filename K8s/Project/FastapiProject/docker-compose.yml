@@ -1,0 +1,58 @@
+# ========================================= # 
+# ========== FastAPI Application ========== # 
+# ========================================= # 
+#version: "3.9"
+# = Services = # 
+services: 
+  # == mysql == # 
+  mysql: 
+    image: mysql:8 
+    container_name: mysql
+    restart: always 
+    environment: 
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: testdb
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports: 
+      - target: 3306 
+        published: 3306
+    volumes: 
+      - mysql_data:/var/lib/mysql
+      - ./mysql-init:/docker-entrypoint-initdb.d
+
+  # == redis == # 
+  redis: 
+    image: redis:7 
+    container_name: redis 
+    restart: always
+    ports: 
+      - target: 6379 
+        published: 6379
+
+  # == workload == # 
+  fastapi: 
+    build: . 
+    container_name: fastapi 
+    depends_on: 
+      - mysql
+      - redis 
+    environment: 
+      # redis 
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      # mysql
+      MYSQL_HOST: mysql
+      MYSQL_PORT: 3306
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_DB: testdb
+    ports: 
+      - target: 8000
+        published: 8000 
+
+
+# = Volumes = # 
+volumes: 
+  mysql_data:
+

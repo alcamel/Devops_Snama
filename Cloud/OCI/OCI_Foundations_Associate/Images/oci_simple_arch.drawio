@@ -1,0 +1,59 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.7.0 Safari/537.36" version="27.0.9">
+  <diagram name="Page-1" id="O-4GiWMZZN-MWffpAj-t">
+    <mxGraphModel dx="1149" dy="1055" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Uy7CX4-b0COeXoO4IkQt-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="370" width="880" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="Uy7CX4-b0COeXoO4IkQt-2" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="340" y="410" width="260" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="Uy7CX4-b0COeXoO4IkQt-3" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="620" y="410" width="260" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="Uy7CX4-b0COeXoO4IkQt-4" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="910" y="410" width="260" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="Uy7CX4-b0COeXoO4IkQt-9" value="" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="400" y="430" width="450" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Uy7CX4-b0COeXoO4IkQt-5" value="Application&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="410" y="460" width="115" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Uy7CX4-b0COeXoO4IkQt-7" value="Application&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="692.5" y="460" width="115" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Uy7CX4-b0COeXoO4IkQt-10" value="" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="400" y="550" width="450" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Uy7CX4-b0COeXoO4IkQt-8" value="&lt;div&gt;DataBase&lt;/div&gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="720" y="580" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Uy7CX4-b0COeXoO4IkQt-6" value="&lt;div&gt;DataBase&lt;/div&gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="410" y="570" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Uy7CX4-b0COeXoO4IkQt-12" value="Data Graud" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="580" y="560" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Uy7CX4-b0COeXoO4IkQt-14" value="" style="curved=1;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530" y="620" as="sourcePoint" />
+            <mxPoint x="580" y="570" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="580" y="620" />
+              <mxPoint x="530" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Uy7CX4-b0COeXoO4IkQt-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Uy7CX4-b0COeXoO4IkQt-12" target="Uy7CX4-b0COeXoO4IkQt-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="670" y="620" as="sourcePoint" />
+            <mxPoint x="720" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

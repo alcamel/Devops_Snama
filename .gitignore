@@ -1,0 +1,159 @@
+# General
+.DS_Store
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+*.log
+*.pid
+*.seed
+*.pid.lock
+*.env
+*.terraform*
+.terraform.lock.hcl
+.terraform/
+.cache/
+.idea/
+.vscode/
+*.iml
+*.pyc
+__pycache__/
+*.egg-info/
+*.egg
+*.pyo
+*.pyd
+*.so
+*.class
+*.jar
+*.war
+*.ear
+*.db
+*.sqlite
+*.sql
+*.dump
+*.bak
+*.tar.gz
+*.zip
+*.rar
+*.7z
+*.pdf
+*.xlsx
+*.docx
+*.pptx
+
+# Cloud specific
+*.pem
+*.key
+*.cer
+*.crt
+*.csr
+*.pfx
+*.p12
+*.kubeconfig
+*.kube/config
+*.minikube/
+
+# Docker
+docker-compose.override.yml
+docker-compose.yml.bak
+
+# Databases
+*.sql.gz
+*.sql.bak
+*.ibd
+*.myd
+*.myi
+*.frm
+
+# Python
+venv/
+.env/
+ENV/
+env.bak/
+venv.bak/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE specific
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# OS generated
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Credentials and sensitive data
+secrets.*
+*.secret
+*.key
+*.cert
+*.pem
+vault.token
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Project specific ignores (from your structure)
+# Cloud providers might have sensitive files
+Cloud/**/credentials
+Cloud/**/config
+Cloud/**/*.tfstate
+Cloud/**/*.tfstate.backup
+
+# Terraform
+*.tfvars
+*.tfplan
+*.terraform.lock.hcl
+
+# Ansible
+retry/*
+*.retry
+
+# Kubernetes
+kubeconfig*
+*.kubeconfig
+
+# Vagrant
+.vagrant/
+Vagrantfile
+
+# Git
+*.orig
+
+# Binary files
+*.exe
+*.dll
+*.bin
+*.exe~
+*.so
+*.dylib
+
+# Documentation
+*.pdf
+*.docx
+*.pptx
+*.xlsx
+**/.git/
+!.git
