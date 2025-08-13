@@ -1,24 +1,23 @@
 FROM php:8.2-apache
 
+# Install passwd command
+RUN apt-get update && apt-get install -y passwd
 
-RUN groupadd -g 1000 admin && useradd -u 1000 -g admin -m admin 
+# Set root password
+RUN echo "root:rootpassword" | chpasswd
 
+# Create admin user with password
+RUN useradd -m -s /bin/bash admin && \
+    echo "admin:adminpassword" | chpasswd && \
+    usermod -aG sudo admin
+
+# Workdir & copy files
 WORKDIR /var/www/html
+COPY code/ .
 
+# Give Apache write permissions
+RUN chown -R www-data:www-data /var/www/html && \
+    chmod -R 775 /var/www/html
 
-COPY code/ . 
-
-
-RUN chown -R admin:www-data /var/www/html && chmod -R 775 /var/www/html 
-
-
-RUN usermod -aG www-data admin 
-
-
-EXPOSE 80 
-
-
-RUN a2enmod rewrite 
-
-
-USER admin
+EXPOSE 80
+RUN a2enmod rewrite
